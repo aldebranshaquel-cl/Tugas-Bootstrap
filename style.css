@@ -1,0 +1,31 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: rgb(10, 169, 137);
+  --bs-btn-hover-bg: rgb(10, 169, 137);
+  --bs-btn-hover-border-color: rgb(10, 169, 137);
+  --bs-btn-active-bg: rgb(10, 169, 137);
+  --bs-btn-active-border-color: rgb(10, 169, 137);
+}
+
+.home {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("kuningan.jpg");
+  background-size: cover;
+  background-position: 40% 60%;
+  height: 80vh;
+}
+
+h1 {
+  margin-bottom: 2px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.text-justify-custom {
+  text-align: justify;
+}
