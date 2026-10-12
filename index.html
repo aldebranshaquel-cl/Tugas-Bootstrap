@@ -335,3 +335,37 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>
+
+<script>
+  // Mengambil elemen form
+  const formPesan = document.getElementById("formpesan");
+
+  // Mengambil elemen modal
+  const modalKonfirmasi = new bootstrap.Modal(
+    document.getElementById("modalkonfirmasi"),
+  );
+
+  // Mengambil tombol konfirmasi
+  const btnKonfirmasi = document.getElementById("btnkonfirmasi");
+
+  // Menampilkan modal ketika form dikirim
+  formPesan.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    modalKonfirmasi.show();
+  });
+
+  // Aksi ketika tombol Ya, Kirim diklik
+  btnKonfirmasi.addEventListener("click", function () {
+    modalKonfirmasi.hide();
+
+    Swal.fire({
+      title: "Pesan Berhasil!",
+      text: "Terima kasih, pesan Anda berhasil dikirim.",
+      icon: "success",
+      confirmButtonText: "OK",
+    });
+
+    formPesan.reset();
+  });
+</script>
